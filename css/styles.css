@@ -1,0 +1,88 @@
+/* Cascading Styl sheet; it is use to describe the presentation of a document written in a mark language */
+
+/* evolved 1990 */
+
+/* CSS Syntax selector: 
+The Below select the Div element and apply color blue to it content
+div {
+    color: blue;
+} 
+
+The Below select an element with class attribute - italic and give it a red color
+.italic {
+    color: red;
+}
+The Below select an element with id attribute - italic and give it a red color
+#italic {
+    color: red;
+}
+
+The below style target the element inside the dv element and give it a bold font style
+ div p {
+     font-style: bold;
+ }
+
+ Styling multiple element: we use comma separator to style more than one element
+ h1, p, div {
+     color: yellow;
+ }
+
+
+ This is use to apply effect when the scrren size a targeted sized eg. 480
+ @media screen and (min-width: 480px) {
+     body {
+         background: green;
+     }
+}
+
+This is use to apply gradient effect to any section of your website
+ul {
+    background: linear-gradient(lightgreen, lightblue);
+}
+
+
+CSS Priority  
+id : high and apply first before any property
+class : follow to apply style if no overwritten is found on the ID style
+element : least of all priority of styling 
+
+Above all, Inline style is apply before any style, follow by head style sheet parttern and the least is the external sheet
+*/
+/* HTML styling  */
+/* 
+inline style: is not re-usable. check the example html file for this example
+head style styling: re-usable. check the head part of the example file to see this method
+external script: which is this script we are on. see below
+ */
+
+ /* CSS Libraries;
+
+ Bootstrap, Hamburger.css, font-awesome Ionic, materialize */
+
+div {
+    color: blue;
+}
+
+div p {
+    color: red;
+}
+
+.italic {
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+ul {
+    background: linear-gradient(lightgreen, lightblue);
+}
+
+ul li a:hover {
+    background: purple;
+    color: white;
+    padding: 10px;
+}
