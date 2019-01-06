@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- testing the menu items  -->
+    <header>
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Bootstrap</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center">Welcome to my website</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Login</h3>
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="media/img/example.png" class="img-responsive" alt="Cinque Terre">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Table</h2>
+                    <p>The .table-responsive class creates a responsive table which will scroll horizontally on small
+                        devices
+                        (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Firstname</th>
+                                    <th>Lastname</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Anna</td>
+                                    <td>Joe</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Debbie</td>
+                                    <td>Doe</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>John</td>
+                                    <td>James</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+            <p>Asterik icon: <span class="glyphicon glyphicon-asterisk"></span></p>
+            <p>Asterik icon: <span class="glyphicon glyphicon-home"></span></p>
+            <div class="container">
+                <h2>Dropdowns</h2>
+                <p>The .dropdown class is used to indicate a dropdown menu.</p>
+                <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Simple Collapsible</h2>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple
+                    collapsible</button>
+                <div id="demo" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
