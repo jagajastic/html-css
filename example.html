@@ -7,24 +7,57 @@
 <!-- <hr> This is use to display an horizontal line on the website or page -->
 
 <!-- the below html element will display content in the body of your website or page -->
-<!DOCTYPE html>    
+<!DOCTYPE html>
 <html>
-   <head>
-        <meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Example site</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+        div {
+            color: blue;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+    </style>
 </head>
+
 <body>
     <h1>This is an Example site or Page</h1>
     <p>stay pu as we continue with the class</p>
     <hr>
-    <div>
+    <div style="color:blue;">
+        <p>My List</p>
         <ul>
-            <li>This </li>
-            <li>is an</li>
-            <li>unordered list</li>
+            <li><a href="#">This</a> </li>
+            <li style="font-style:italic;"><a href="#">is an</a></li>
+            <li class="italic"><a href="#">unordered list</a></li>
         </ul>
     </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Cookies Register</h3>
+            <ul>
+                    <li>One</li>
+                </ul>
+        </div>
+        <div class="col-md-4">
+            <h3>Register</h3>
+            <ul>
+                <li>One</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
